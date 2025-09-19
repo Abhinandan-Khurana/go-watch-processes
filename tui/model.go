@@ -80,10 +80,10 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		notifMsg := fmt.Sprintf("Name: %s (PID: %d)\nDuration: %s", msg.Name, msg.PID, duration)
 
 		// Add to our display list
-		logMsg := fmt.Sprintf("g %s %s",
+		logMsg := fmt.Sprintf("%s %s %s",
 			styleCompleted.Render("✔ Task Completed:"),
 			msg.Name,
-			styleDetails.Render(fmt.Sprintf("(PID: %d, Duration: g)", msg.PID, duration)),
+			styleDetails.Render(fmt.Sprintf("(PID: %d, Duration: %s)", msg.PID, duration)),
 		)
 		m.addEvent(logMsg)
 
@@ -96,10 +96,10 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		notifMsg := fmt.Sprintf("Name: %s (PID: %d)\nDetails: %s", msg.Name, msg.PID, msg.Details)
 
 		// Add to our display list
-		logMsg := fmt.Sprintf("g %s %s",
+		logMsg := fmt.Sprintf("%s %s %s",
 			styleAlert.Render("❗ Alert: "+msg.Reason),
 			msg.Name,
-			styleDetails.Render(fmt.Sprintf("(PID: %d, g)", msg.PID, msg.Details)),
+			styleDetails.Render(fmt.Sprintf("(PID: %d, %s)", msg.PID, msg.Details)),
 		)
 		m.addEvent(logMsg)
 
@@ -111,7 +111,7 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 
 // addEvent adds a new event to the list, keeping it from growing too large.
 func (m *model) addEvent(event string) {
-	m.events = append(m.events, fmt.Sprintf("[g] %s", time.Now().Format("15:04:05"), event))
+	m.events = append(m.events, fmt.Sprintf("[%s] %s", time.Now().Format("15:04:05"), event))
 	// Keep the list to a manageable size, e.g., max 20 entries
 	if len(m.events) > 20 {
 		m.events = m.events[1:]

@@ -46,7 +46,7 @@ const (
 	cpuSustainedDuration = 5    // Seconds
 )
 
-var suspiciousKeywords = []string{"miner", "keylog", "tor", "rat", "malware", "backdoor"}
+var suspiciousKeywords = []string{"miner", "keylog", "tor", "rat", "malware", "backdoor", "xmrig", "mimikatz", "lazagne", "cobaltstrike", "meterpreter", "remcos", "quasar", "darkcomet", "nanocore", "plugx", "gh0st", "njrat", "redline", "vidar", "azorult", "agenttesla", "lokibot", "formbook", "lockbit", "revil"}
 
 // isIgnored checks if a process name should be ignored based on the ignoreList.
 func isIgnored(processName string) bool {

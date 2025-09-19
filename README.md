@@ -4,7 +4,11 @@ An intelligent, cross-platform command-line tool that monitors system processes 
 
 ### Screenshots
 
+### TUI -
 ![tui](./static/tui.png)
+
+#### Notification -
+![notification](./static/notification-2.png)
 ![notification](./static/notification.png)
 
 ---
@@ -86,14 +90,13 @@ Press `q` or `Ctrl+C` to quit.
 
 Monitoring for long-running tasks and suspicious activity... Press 'q' to quit.
 
-[g] 18:24:45%!(EXTRA string=g ✔ Task Completed: sleep%!(EXTRA string=(PID: 23767, Duration: g)%!(EXTRA time.Duration=11s)))
-[g] 18:24:58%!(EXTRA string=g ✔ Task Completed: screencaptureui%!(EXTRA string=(PID: 23883, Duration: g)%!(EXTRA time.Duration=10s)))
-[g] 18:25:44%!(EXTRA string=g ❗ Alert: Suspicious Process Detected ContainerMetadataExtractor%!(EXTRA string=(PID: 24317, g)%!(EXTRA string=Matched keyword: '
-[g] 18:25:45%!(EXTRA string=g ❗ Alert: Suspicious Process Detected AssetCacheLocatorService%!(EXTRA string=(PID: 24322, g)%!(EXTRA string=Matched keyword: 'to
-[g] 18:26:08%!(EXTRA string=g ✔ Task Completed: AddressBookSourceSync%!(EXTRA string=(PID: 24240, Duration: g)%!(EXTRA time.Duration=31s)))
-[g] 18:26:35%!(EXTRA string=g ✔ Task Completed: %!(EXTRA string=(PID: 24458, Duration: g)%!(EXTRA time.Duration=31s)))
-[g] 18:26:42%!(EXTRA string=g ✔ Task Completed: screencaptureui%!(EXTRA string=(PID: 24055, Duration: g)%!(EXTRA time.Duration=1m33s)))
-[g] 18:26:42%!(EXTRA string=g ✔ Task Completed: %!(EXTRA string=(PID: 24422, Duration: g)%!(EXTRA time.Duration=44s)))
+[18:24:45] ✔ Task Completed: sleep(PID: 23767, Duration: 11s)
+[18:24:58] ✔ Task Completed: screencaptureui (PID: 23883, Duration: 10s)
+[18:25:45] ❗ Alert: Suspicious Process Detected AssetCacheLocatorService (PID: 24322)[Matched keyword: 'tor']
+[18:26:08] ✔ Task Completed: AddressBookSourceSync (PID: 24240, Duration: 31s)
+[18:26:35] ✔ Task Completed: (PID: 24458, Duration: 31s)
+[18:26:42] ✔ Task Completed: screencaptureui (PID: 24055, Duration: 1m33s)
+[18:26:42] ✔ Task Completed: (PID: 24422, Duration: 44s)
 ```
 
 ## 🔧 Configuration
