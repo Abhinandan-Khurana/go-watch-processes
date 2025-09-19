@@ -1,0 +1,33 @@
+NOTIFIER: 2025/09/19 17:25:44 notifier.go:28: Attempting to send notification: Title='Process Started', Message='Name: 
+PID: 36731'
+NOTIFIER: 2025/09/19 17:25:44 notifier.go:34: Notification sent successfully.
+NOTIFIER: 2025/09/19 17:26:43 notifier.go:28: Attempting to send notification: Title='Process Started', Message='Name: mdworker_shared
+PID: 51047'
+NOTIFIER: 2025/09/19 17:26:43 notifier.go:34: Notification sent successfully.
+NOTIFIER: 2025/09/19 17:26:43 notifier.go:28: Attempting to send notification: Title='Process Started', Message='Name: 
+PID: 49944'
+NOTIFIER: 2025/09/19 17:26:43 notifier.go:34: Notification sent successfully.
+NOTIFIER: 2025/09/19 17:26:44 notifier.go:28: Attempting to send notification: Title='Process Started', Message='Name: cloudd
+PID: 51052'
+NOTIFIER: 2025/09/19 17:26:44 notifier.go:34: Notification sent successfully.
+NOTIFIER: 2025/09/19 17:26:44 notifier.go:28: Attempting to send notification: Title='Process Started', Message='Name: localizationswitcherd
+PID: 51053'
+NOTIFIER: 2025/09/19 17:26:44 notifier.go:34: Notification sent successfully.
+NOTIFIER: 2025/09/19 17:27:22 notifier.go:28: Attempting to send notification: Title='Process Started', Message='Name: 
+PID: 51284'
+NOTIFIER: 2025/09/19 17:27:22 notifier.go:34: Notification sent successfully.
+NOTIFIER: 2025/09/19 17:27:22 notifier.go:28: Attempting to send notification: Title='Process Started', Message='Name: mdworker_shared
+PID: 51467'
+NOTIFIER: 2025/09/19 17:27:22 notifier.go:34: Notification sent successfully.
+NOTIFIER: 2025/09/19 17:27:29 notifier.go:28: Attempting to send notification: Title='Process Started', Message='Name: 
+PID: 51176'
+NOTIFIER: 2025/09/19 17:27:30 notifier.go:34: Notification sent successfully.
+NOTIFIER: 2025/09/19 17:28:19 notifier.go:28: Attempting to send notification: Title='Process Started', Message='Name: 
+PID: 51724'
+NOTIFIER: 2025/09/19 17:28:19 notifier.go:34: Notification sent successfully.
+NOTIFIER: 2025/09/19 17:28:20 notifier.go:28: Attempting to send notification: Title='Process Started', Message='Name: mdworker_shared
+PID: 51908'
+NOTIFIER: 2025/09/19 17:28:20 notifier.go:34: Notification sent successfully.
+NOTIFIER: 2025/09/19 17:28:22 notifier.go:28: Attempting to send notification: Title='Process Started', Message='Name: Google Chrome Helper (Renderer)
+PID: 51920'
+NOTIFIER: 2025/09/19 17:28:22 notifier.go:34: Notification sent successfully.
